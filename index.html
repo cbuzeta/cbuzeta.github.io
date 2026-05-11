@@ -1,7 +1,453 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cristian Buzeta, Assistant Professor of Marketing at Universidad de Chile, researching digital advertising, algorithmic persuasion, and social media.">
+  <title>Cristian Buzeta | Assistant Professor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#about" class="nav-brand">Cristian Buzeta</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+
+          <aside class="about-sidebar">
+            <div class="avatar-wrap">
+              <img src="img/profile.jpg" alt="Cristian Buzeta"
+                   onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='flex'">
+              <div id="avatar-fallback" class="avatar-fallback">CB</div>
+            </div>
+            <h1 class="profile-name">Cristian Buzeta</h1>
+            <p class="profile-title">Assistant Professor · Marketing</p>
+            <p class="profile-org">
+              <a href="https://negocios.uchile.cl" target="_blank" rel="noopener">FEN, Universidad de Chile</a>
+            </p>
+            <nav class="social-links" aria-label="Social links">
+              <a href="mailto:cbuzetar@fen.uchile.cl" class="social-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                Email
+              </a>
+              <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ&sortby=pubdate" target="_blank" rel="noopener" class="social-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 9l4 2.5V20h14v-8.5L23 9 12 2zm0 2.8L20.2 9 12 14.2 3.8 9 12 4.8zM7 12.8V18h10v-5.2L12 16 7 12.8z"/></svg>
+                Scholar
+              </a>
+              <a href="https://twitter.com/cbuzeta" target="_blank" rel="noopener" class="social-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.626zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                X / Twitter
+              </a>
+              <a href="https://www.linkedin.com/in/cristian-buzeta-b1009b13/" target="_blank" rel="noopener" class="social-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 23.998 23.227 23.998 22.271V1.729C23.998.774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/cbuzeta" target="_blank" rel="noopener" class="social-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </nav>
+          </aside>
+
+          <div class="about-content">
+            <h2>About</h2>
+            <p class="bio">
+              I am an Assistant Professor of Digital Marketing at the
+              <a href="https://negocios.uchile.cl" target="_blank" rel="noopener">Departamento de Administración</a>,
+              <a href="https://fen.uchile.cl/" target="_blank" rel="noopener">Facultad de Economía y Negocios (FEN)</a>,
+              <a href="https://www.uchile.cl" target="_blank" rel="noopener">Universidad de Chile</a>.
+              My main research lines relate to social media marketing and brand communication.
+              I investigate individuals' motivations to use social media and their impact on
+              consumers' brand-related activities across different types of platforms. I am also
+              interested in cross-cultural differences and multi-country commonalities that shape
+              the effectiveness of social media marketing, including algorithmic persuasion,
+              digital advertising formats, and the role of user well-being in shaping responses
+              to personalized communication.
+            </p>
+            <p class="bio">
+              I hold a PhD in Applied Economics (Digital Marketing Communications) from the
+              <a href="https://www.uantwerpen.be" target="_blank" rel="noopener">University of Antwerp</a>,
+              Belgium (supervised by Profs. Nathalie Dens and Patrick De Pelsmacker).
+             </p> 
+            <p class="bio">
+              My work has been published in journals including the <em>Journal of Interactive Marketing</em>,
+              <em>Journal of Business Research</em>, <em>International Journal of Advertising</em>,
+              and <em>Psychology &amp; Marketing</em>. I am Associate Editor of the
+              <em>Review of Marketing Science</em> and serve on the Editorial Review Boards of the
+              <em>International Journal of Advertising</em>, <em>Journal of Advertising Research</em>,
+              <em>Journal of Interactive Advertising</em>, and <em>Journal of Current Issues and Research
+              in Advertising</em>. I am also a member of AIM Chile.
+            </p>
+
+            <div class="profile-grid">
+              <div>
+                <h3 class="grid-heading">Research Interests</h3>
+                <ul class="tag-list">
+                  <li>Digital Marketing</li>
+                  <li>Advertising &amp; Persuasion</li>
+                  <li>Algorithmic Communication</li>
+                  <li>Social Media</li>
+                  <li>Audience Research</li>
+                  <li>Privacy &amp; Well-being</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="grid-heading">Education</h3>
+                <ul class="edu-list">
+                  <li>
+                    <strong>PhD</strong> · Applied Economics<br>
+                    <span class="muted">University of Antwerp, Belgium · 2021</span>
+                  </li>
+                  <li>
+                    <strong>MSc</strong> · Marketing<br>
+                    <span class="muted">Universidad de Chile · 2011</span>
+                  </li>
+                  <li>
+                    <strong>BComm</strong> · Business Administration<br>
+                    <span class="muted">Universidad de Chile · 2009</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS ───────────────────────────────────────── -->
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Selected Publications</h2>
+          <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ&sortby=pubdate" target="_blank" rel="noopener" class="section-link">
+            Full list on Google Scholar →
+          </a>
+        </div>
+
+        <div class="pub-list">
+
+          <article class="pub-item">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+              <p class="pub-title">Diversity and inclusion in advertising: a non-Western perspective</p>
+              <p class="pub-authors">Eisend, M., Rosengren, S., Mueller-Bryson, S., &amp; Buzeta, C.</p>
+              <p class="pub-venue"><em>International Journal of Advertising</em>, 45(3), 581–584.</p>
+              <div class="pub-badges">
+                <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+              <p class="pub-title">Time for action: implied action does it!</p>
+              <p class="pub-authors">Roose, G., Geuens, M., &amp; Buzeta, C.</p>
+              <p class="pub-venue"><em>Psychology &amp; Marketing</em>, 1–19.</p>
+              <div class="pub-badges">
+                <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-body">
+              <p class="pub-title">Branded content and motivations for social media use as drivers of brand outcomes on social media: a cross-cultural study</p>
+              <p class="pub-authors">Buzeta, C., De Keyzer, F., Dens, N., &amp; De Pelsmacker, P.</p>
+              <p class="pub-venue"><em>International Journal of Advertising</em>, 43(4), 637–671.</p>
+              <div class="pub-badges">
+                <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-body">
+              <p class="pub-title">The role of well-being in consumer's responses to personalized advertising on social media</p>
+              <p class="pub-authors">De Keyzer, F., Buzeta, C., &amp; Lopes, A. I.</p>
+              <p class="pub-venue"><em>Psychology and Marketing</em>, 41(6), 1206–1222.</p>
+              <div class="pub-badges">
+                <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+              </div>
+            </div>
+          </article>
+
+          <div id="pub-extra" class="pub-extra">
+
+            <article class="pub-item">
+              <span class="pub-year">2024</span>
+              <div class="pub-body">
+                <p class="pub-title">Perspectives: Replication is more than meets the eye</p>
+                <p class="pub-authors">Bergkvist, L., De Keyzer, F., &amp; Buzeta, C.</p>
+                <p class="pub-venue"><em>International Journal of Advertising</em>, 43(3), 580–599.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-item">
+              <span class="pub-year">2024</span>
+              <div class="pub-body">
+                <p class="pub-title">Social Media Characteristics and Consumers' Online Brand-Related Activities (COBRAs): the mediating role of time spent and emotional connectedness</p>
+                <p class="pub-authors">Buzeta, C., De Pelsmacker, P., &amp; Dens, N.</p>
+                <p class="pub-venue"><em>Journal of Interactive Advertising</em>, 24(4), 401–423.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-item">
+              <span class="pub-year">2024</span>
+              <div class="pub-body">
+                <p class="pub-title">This embodied conversational agent looks very human and as old as I feel! The effect of perceived agent anthropomorphism and consumer-agent age difference on brand attitude</p>
+                <p class="pub-authors">David-Ignatieff, A., Buzeta, C., De Pelsmacker, P., &amp; Ben Dahmane Mouelhi, N.</p>
+                <p class="pub-venue"><em>Journal of Marketing Communications</em>, 30(8), 881–909.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-item">
+              <span class="pub-year">2023</span>
+              <div class="pub-body">
+                <p class="pub-title">An international perspective of the academic-practitioner divide: an exploratory study into its causes and solutions in advertising</p>
+                <p class="pub-authors">Ang, L., Buzeta, C., Hirose, M., van Loggerenberg, M. J. C., van Noort, G., Uribe, R., &amp; Voorveld, H. A. M.</p>
+                <p class="pub-venue"><em>International Journal of Advertising</em>, 42(1), 181–200.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-item">
+              <span class="pub-year">2021</span>
+              <div class="pub-body">
+                <p class="pub-title">Determinants of Football TV Audience: The straight and ancillary effects of the local team on the FIFA World Cup</p>
+                <p class="pub-authors">Uribe, R., Buzeta, C., Manzur, E., &amp; Álvarez, I.</p>
+                <p class="pub-venue"><em>Journal of Business Research</em>, 127, 454–463.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pub-item">
+              <span class="pub-year">2020</span>
+              <div class="pub-body">
+                <p class="pub-title">Motivations to use different social media types and their impact on consumers' online brand-related activities (COBRAs)</p>
+                <p class="pub-authors">Buzeta, C., De Pelsmacker, P., &amp; Dens, N.</p>
+                <p class="pub-venue"><em>Journal of Interactive Marketing</em>, 52, 79–98.</p>
+                <div class="pub-badges">
+                  <a href="https://scholar.google.com/citations?user=di4ydlEAAAAJ" target="_blank" rel="noopener" class="badge">Scholar</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <button id="pub-toggle" class="pub-toggle" aria-expanded="false">
+            Show 6 more publications
+            <svg class="toggle-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ACTIVE PROJECTS ───────────────────────────────────── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Active Projects</h2>
+        <div class="card-grid">
+
+          <div class="card">
+            <p class="card-label">ANID · Fondecyt Iniciación 2024</p>
+            <h3 class="card-title">Characteristics of algorithmic persuasion and its understanding among digital users in Chile</h3>
+            <p class="card-body">
+              This project examines how algorithmic systems shape persuasive communication
+              in digital environments, and how Chilean users perceive and understand these
+              mechanisms. Principal investigator. Funded ca. USD 100,500.
+            </p>
+            <div class="card-footer">
+              <span class="pill pill-funded">Funded · 2024–2027</span>
+              <span class="pill">Principal Investigator</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="card-label">Meta Research · 2022</p>
+            <h3 class="card-title">A cross-cultural examination of social media privacy concerns</h3>
+            <p class="card-body">
+              Funded through Meta's People's Expectations and Experiences with Digital
+              Privacy RFP. Examines how users across cultures form, understand, and
+              act on privacy concerns in social media contexts. Funded ca. USD 95,400.
+            </p>
+            <div class="card-footer">
+              <span class="pill pill-funded">Funded</span>
+              <span class="pill">Principal Investigator</span>
+              <span class="pill">With F. De Keyzer · J. Pfiffelmann · R. López Moreno</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="card-label">International Collaboration</p>
+            <h3 class="card-title">Generation Alpha: Profiling the next consumer cohort</h3>
+            <p class="card-body">
+              Research on Generation Alpha, the most diverse generational cohort in history,
+              and their implications for marketing, advertising, and consumer behavior.
+            </p>
+            <div class="card-footer">
+              <span class="pill">In progress</span>
+              <span class="pill">With J. Van den Bergh · P. De Pelsmacker</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TOOLS ─────────────────────────────────────────────── -->
+    <section id="tools" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Tools &amp; Resources</h2>
+        <p class="section-lead">Open tools and resources I've created for researchers.</p>
+        <div class="card-grid">
+
+          <div class="card card-placeholder">
+            <h3 class="card-title">Coming soon</h3>
+            <p class="card-body">Tools and resources will be listed here as they become available.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEACHING ───────────────────────────────────────────── -->
+    <section id="teaching" class="section">
+      <div class="container">
+        <h2 class="section-title">Teaching</h2>
+        <div class="teaching-list">
+
+          <div class="teaching-item">
+            <div class="teaching-meta">
+              <span class="teaching-level">Graduate</span>
+              <span class="teaching-semester">2024 – present · Universidad de Chile</span>
+            </div>
+            <h3 class="course-title">Digital Marketing</h3>
+            <p class="course-desc">Master of Marketing program, Facultad de Economía y Negocios.</p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-meta">
+              <span class="teaching-level">Undergraduate</span>
+              <span class="teaching-semester">2022–2023 · Universidad de los Andes</span>
+            </div>
+            <h3 class="course-title">Advertising II · Strategic Marketing · Integrated Marketing Communications</h3>
+            <p class="course-desc">School of Communication, Universidad de los Andes (Chile).</p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-meta">
+              <span class="teaching-level">Graduate &amp; Undergraduate</span>
+              <span class="teaching-semester">2013–2017 · Universidad de Chile</span>
+            </div>
+            <h3 class="course-title">Marketing Research · Introduction to Marketing · Statistical Methods</h3>
+            <p class="course-desc">Faculty of Economics and Business, Universidad de Chile.</p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-meta">
+              <span class="teaching-level">Undergraduate</span>
+              <span class="teaching-semester">2018–2022 · University of Antwerp</span>
+            </div>
+            <h3 class="course-title">Marketing · Marketing Management</h3>
+            <p class="course-desc">Faculty of Business and Economics. Courses delivered in English, including
+              the Semester in Antwerp program (James Madison University).</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CV ────────────────────────────────────────────────── -->
+    <section id="cv" class="section section-alt section-center">
+      <div class="container">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="muted" style="margin-bottom: 2rem; max-width: 480px; margin-inline: auto;">
+          Download my full CV for a complete record of my academic background,
+          publications, grants, and teaching history.
+        </p>
+        <a href="https://negocios.uchile.cl/wp-content/uploads/2024/03/Cristian-Buzeta-CV.pdf"
+           class="btn" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/></svg>
+          Download CV (PDF)
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Cristian Buzeta &middot; Universidad de Chile</p>
+      <p class="footer-sub">Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // Publications expand/collapse
+    const pubToggle = document.getElementById('pub-toggle');
+    const pubExtra = document.getElementById('pub-extra');
+    pubToggle.addEventListener('click', () => {
+      const open = pubExtra.classList.toggle('open');
+      pubToggle.setAttribute('aria-expanded', open);
+      pubToggle.childNodes[0].textContent = open
+        ? 'Show fewer publications '
+        : 'Show 6 more publications ';
+    });
+  </script>
+
 </body>
 </html>
