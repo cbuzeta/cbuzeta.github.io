@@ -371,6 +371,47 @@ a:hover { color: var(--blue-dark); }
   transform: rotate(180deg);
 }
 
+.pub-group-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.pub-list + .pub-group-title { margin-top: 2.5rem; }
+
+/* ── Two-column lists (Outreach, Service) ───────────────────── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.two-col .grid-heading { margin-top: 2rem; }
+.two-col .grid-heading:first-child { margin-top: 0; }
+
+.entry-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.entry-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.entry-list strong { color: var(--navy); font-weight: 600; }
+
+.entry-year {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding-top: 0.1rem;
+}
+
 /* ── Cards ──────────────────────────────────────────────────── */
 .card-grid {
   display: grid;
@@ -585,4 +626,8 @@ a:hover { color: var(--blue-dark); }
 
   /* Cards */
   .card-grid { grid-template-columns: 1fr; }
+
+  /* Outreach, Service */
+  .two-col { grid-template-columns: 1fr; gap: 2rem; }
+  .entry-list li { grid-template-columns: 1fr; gap: 0.1rem; }
 }
