@@ -338,6 +338,12 @@ a:hover { color: var(--blue-dark); }
   transition: all 0.15s;
 }
 .badge:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+.badge-static,
+.badge-static:hover { background: var(--bg-alt); color: var(--muted); border-color: var(--border); }
+.badge-oa,
+.badge-oa:hover { background: #f0fff4; color: #2f855a; border-color: #c6f6d5; }
+.badge-award,
+.badge-award:hover { background: #fffaf0; color: #b7791f; border-color: #feebc8; }
 
 /* Publications expand/collapse */
 .pub-extra {
@@ -402,6 +408,8 @@ a:hover { color: var(--blue-dark); }
   transition: box-shadow 0.2s;
 }
 .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+.card-wide { grid-column: 1 / -1; }
 
 .card-placeholder {
   background: var(--bg-alt);
